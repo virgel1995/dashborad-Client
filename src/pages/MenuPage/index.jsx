@@ -13,9 +13,10 @@ export function MenuPage({
 }) {
     const { loading , error , data } = useQuery(menuPageQuery)
 if (!loading && !error){
+    console.log(data)
      console.log(error)
     const { getMutualGuilds } = data
-    console.log(getMutualGuilds)
+    // console.log(getMutualGuilds)
     return (
         <div>
  <MenuNavbar />
