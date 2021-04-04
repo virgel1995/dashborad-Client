@@ -14,7 +14,7 @@ import './index.css';
 import './MyStyle.css';
 
 const link = createHttpLink({
-  uri: 'http://localhost:3002/graphql',
+  uri: 'http://dashboaerd-Api.virgelroot.repl.co/graphql',
   credentials: 'include'
 })
 const client = new ApolloClient({
