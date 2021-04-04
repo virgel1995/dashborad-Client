@@ -11,10 +11,9 @@ import { menuPageQuery } from "../../graphql/queris/index"
 export function MenuPage({
     history,
 }) {
-
-    console.log(error)
     const { loading , error , data } = useQuery(menuPageQuery)
 if (!loading && !error){
+     console.log(error)
     const { getMutualGuilds } = data
     console.log(getMutualGuilds)
     return (
@@ -23,21 +22,9 @@ if (!loading && !error){
 <MenuComp guilds={ getMutualGuilds }  />
 <h1>menue</h1>
  {/* <MenuHeader /> */}
-     {/* <MenuFooter /> */}
+     <MenuFooter /> 
         </div>
     )
 } return <div className="text-center align-content-center justify-content-center"> <Image src="https://cdn.discordapp.com/icons/801586699108745227/9d7b1008a291fff12aba70d3a5b14ed4.png" className="App-logo w-50  rounded-circle hvr-box-shadow-inset guild-img" thumbnail /></div>
 
-
-
-
-
-    // return !loading && (
-    //     <div>
-    //        
-    //         
-    //        
-    //     </div>
-
-    // );
 }
