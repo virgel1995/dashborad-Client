@@ -6,7 +6,7 @@ import { MenuComp, MenuNavbar, MenuFooter } from "../../components"
 import { getUserDetails, getGuilds } from "../../utils/api"
 import {  Image } from 'react-bootstrap';
 import { useQuery } from "@apollo/client"
-import  menuPageQuery  from "../../graphql/queris/index"
+import  menuPageQuery  from "../../graphql/queris"
 
 export function MenuPage({
     history,
