@@ -15,7 +15,7 @@ import './MyStyle.css';
 
 const link = createHttpLink({
   uri: 'https://dashboaerdapi.virgelroot.repl.co/graphql',
-  // credentials: 'include'
+   credentials: 'include'
 })
 const client = new ApolloClient({
   link,
